@@ -133,7 +133,7 @@ while (<INFILE>) {
 	if ($verbose) {
 	    print "$0: Sending SIGINT signal to process $pid\n";
 	}
-	kill 'INT', $pid;
+	kill 'SIGINT', $pid;
     }
 
     # Send SIGQUIT (whenever we need graceful termination)
